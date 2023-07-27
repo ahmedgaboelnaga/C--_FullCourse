@@ -1,0 +1,3 @@
+D:/Projects/C++_FullCourse/cmake-build-debug/CMakeFiles/C___FullCourse.dir
+D:/Projects/C++_FullCourse/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Projects/C++_FullCourse/cmake-build-debug/CMakeFiles/rebuild_cache.dir
