@@ -54,7 +54,7 @@ int main(){
             balance -= Withdraw(balance);
             ShowBalance(balance);
             break;
-        case 4: std::cout << "Thanks for visiting for visiting!\n";
+        case 4: std::cout << "Thanks for visiting!\n";
             break;
         
         default: std::cout << "Invalid choice!\n";
