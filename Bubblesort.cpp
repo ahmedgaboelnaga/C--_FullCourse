@@ -1,12 +1,14 @@
 #include <iostream>
 
-void swap(int &x, int &y){
-    int temporary = x;
+template <typename T>
+void swap(T &x, T &y){
+    T temporary = x;
     x = y;
     y = temporary;
 }
 
-void sort(int array[], int size){
+template <typename T>
+void sort(T array[], int size){
     int temporary;
     for (int i = 0; i < size - 1; i++){
         for (int j = 0; j < size - i - 1; j++){

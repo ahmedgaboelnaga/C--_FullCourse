@@ -8,6 +8,7 @@ void list(){
     std::cout << "'r' for Rock\n";
     std::cout << "'p' for Paper\n";
     std::cout << "'s' for Scissors\n";
+    std::cout << "'c' for close\n";
 }
 char userchoice(){
     char user_choice;
@@ -15,7 +16,7 @@ char userchoice(){
     {
         list();
         std::cin >> user_choice;
-    } while (user_choice != 'r' && user_choice != 's' && user_choice != 'p');
+    } while (user_choice != 'r' && user_choice != 's' && user_choice != 'p' && user_choice != 'c');
     return user_choice;
 }
 char computerchoice(){
@@ -70,14 +71,24 @@ void Choose_winner(char user, char computer){
 }
 
 int main(){
-    char player = userchoice();
-    std::cout << "Your choice is: ";
-    showchoice(player);
+    while (true)
+    {
+        char player = userchoice();
+        if (player != 'c'){
+            std::cout << "Your choice is: ";
+            showchoice(player);
 
-    char computer = computerchoice();
-    std::cout << "The computer choice is: ";
-    showchoice(computer);
+            char computer = computerchoice();
+            std::cout << "The computer choice is: ";
+            showchoice(computer);
 
-    Choose_winner(player, computer);
+            Choose_winner(player, computer);
+            std::cout << "\n";
+        } else {
+            std::cout << "Thank you for playing!";
+            break;
+        }
+    }
+
     return 0;
 }
