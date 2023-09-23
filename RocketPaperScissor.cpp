@@ -70,7 +70,7 @@ void Choose_winner(char user, char computer){
     }
 }
 
-int main(){
+int main() {  
     while (true)
     {
         char player = userchoice();
